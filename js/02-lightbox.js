@@ -5,9 +5,9 @@ const gallery = document.querySelector(".gallery");
 
 const createMurcupImages = galleryItems
   .map(({ preview, original, description }) => {
-    const murcup = `<a class="gallery__item" href="${original}">
+    const murcup = `<li><a class="gallery__item" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}" />
-</a>`;
+</a></li>`;
     return murcup;
   })
   .join("");

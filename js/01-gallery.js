@@ -28,10 +28,10 @@ function onClickImage(e) {
       instance.close();
       removeKeyboardListener();
     }
+  }
 
-    function removeKeyboardListener() {
-      window.removeEventListener("keydown", onListner);
-    }
+  function removeKeyboardListener() {
+    window.removeEventListener("keydown", onListner);
   }
 }
 
